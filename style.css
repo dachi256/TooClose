@@ -1,0 +1,168 @@
+
+#current-panel.blurred {
+  filter: blur(8px);
+}
+
+
+
+#playButton { /* Play button */
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#playButton:hover {  /* On hover color */
+  background-color: #a9a9a9;
+}
+
+
+
+
+body, html { /* Body and html */
+  margin: 0;
+  padding-top: 45px;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#top-nav { /* Navigation bar */
+  text-align: center;
+  width: 100%;
+  background-color: #000000;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2100;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-wrapper { /* Navigation wrapper */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+#nav-wrapper ul { /* Navigation list */
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-right: auto;  /* Aligns the navigation to the right */
+}
+
+#nav-wrapper ul li a, #nav-wrapper ul li a:visited { /* Navigation link */
+  color: white;  /* Original link color */
+  text-decoration: none;  /* No underline */
+  padding: 14px 16px;
+  text-align: center;
+}
+
+#nav-wrapper ul li a:hover {
+  background-color: #ddd;  /* On hover color */
+  color: black;  /* On hover text color */
+}
+
+#comic-name { /* Comic name */
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#comic { /* Comic */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#current-panel { /* Current panel */
+  max-width: 100%;
+  height: auto;
+}
+
+#choices { /* Choices */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+}
+
+
+#choices button, #next, #restart { /* Choices button, next button, and restart button */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: auto;
+  margin-top: 5px; /* Space from the comic or other buttons */
+  margin-bottom: 30px;
+  
+}
+
+#choices button:hover, #next:hover, #restart:hover { /* On hover color */
+  background-color: #555;
+}
+
+
+#about, #contact { /* About and contact */
+  text-align: center;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  border: 2px solid white;
+  width: 56%; 
+  margin: 0 auto 20px;
+}
+
+h2 { 
+  color: white;
+}
+
+@media screen and (max-width: 600px) { /* Media query for mobile */
+  #top-nav {
+    padding-top: 5px;
+  }
+
+  #top-nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  #current-panel, .content-wrapper, .comic-container {
+    max-width: 98%;
+    margin: 0 auto;
+  }
+
+  #about, #contact {
+    padding: 20px;
+    margin: 0 auto 20px;
+  }
+
+  #choices button, #next, #restart {
+    margin: 10px auto;
+  }
+}

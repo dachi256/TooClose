@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="top-nav">
+        <div id="nav-wrapper"> <!-- Wrapper for flexbox alignment -->
+            <ul>
+                <li><a href="#comic">Comic</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="comic-name">TOO CLOSE</div>  
+        </div>
+    </nav>
+    <div class="content-wrapper"> <!-- Wrapper for flexbox alignment -->
+        <div id="comic">
+            <button id="playButton" style="z-index: 2000; position: absolute;">Play</button> <!-- Play button -->
+            <img id="current-panel" src="" alt="Comic Panel"> <!-- Comic panel -->
+            <div id="choices" style="display:none;"> <!-- Choices -->
+                <button id="choiceA"></button>
+                <button id="choiceB"></button>
+            </div>
+            <button id="next" style="display:none;">Next</button>
+            <button id="restart" style="display:none;">Restart</button>
+        </div>
+    </div>
+    <div class="content-wrapper"> <!-- Wrapper for flexbox alignment -->
+        <div id="about">
+            <h2>About</h2> <!-- About section -->
+            <p style="color: white; text-align: justify;">Dive into the eerie world of "Too Close" a suspenseful comic with Gen Z humor. Join us in discovering how a mysterious party invitation leads four unsuspecting girls into a bone-chilling reality that exceeds their wildest nightmares. 
+
+                Our protagonist, Jessica, and her friends Sara, Ana, and Becky, thought they were in for an evening of costumed fun, playful scares, and sugary punch. But as the night prowls on, the line between masquerade and reality blurs. As each friend mysteriously disappears one by one, Jessica slowly realizes that the party is not what it seems. 
+                
+                Crafted with a love for classic horror and a flair for the dramatic, "Too Close" is more than just a tale of fright; it's a comedy-filled adventure that warns against accepting mysterious party invitations. Because you might just end up going somewhere you regret. 
+                
+                Will Jessica survive the night and be able to find her friends? Or will she mysteriously disappear along with them? Uncover the truth and find out—if you're brave enough to peek inside!</p>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div id="contact">
+            <h2>Contact</h2> <!-- Contact section -->
+            <p style="color: white; text-align: justify;">Stay in Touch with the Creators behind "Too Close"
+        
+                Do you have questions that are haunting you, comments that you're dying to share, or spooky fan art that we simply must see? We'd love to hear from you! If you're looking to connect, collaborate, or just have a chat, you can reach out to us by email. We promise we don't bite—unless you're into that sort of thing.
+                </p>
+            <h3 style="color: white; text-align: center;">Email: </h3>
+            <p style="color: white; text-align: center;">
+                <a href="mailto:dt2307@nyu.edu" style="color: white; text-decoration: underline;">dt2307@nyu.edu</a> | 
+                <a href="mailto:edt7330@nyu.edu" style="color: white; text-decoration: underline;">edt7330@nyu.edu</a> | 
+                <a href="mailto:ssa8844@nyu.edu" style="color: white; text-decoration: underline;">ssa8844@nyu.edu</a> | 
+                <a href="mailto:ked9342@nyu.edu" style="color: white; text-decoration: underline;">ked9342@nyu.edu</a>
+            </p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script> <!-- JavaScript file -->
+    <audio id="introMusic" src="music/intro.mp3" preload="auto"></audio> <!-- Intro music -->
+
+</body>
+</html>
+
+
